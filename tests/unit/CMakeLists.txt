@@ -53,7 +53,7 @@ if (PIO_USE_MPISERIAL)
 else ()
   add_mpi_test(pio_unit_test
     EXECUTABLE ${CMAKE_CURRENT_BINARY_DIR}/pio_unit_test
-    NUMPROCS 4
+    NUMPROCS 16
     TIMEOUT ${DEFAULT_TEST_TIMEOUT})
 endif ()
 

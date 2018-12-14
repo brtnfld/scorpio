@@ -161,6 +161,7 @@ ctest_start("${CTEST_SCRIPT_ARG}")
 ## -- Update
 message (" -- Update source - ${CTEST_BUILD_NAME} --")
 set (CTEST_UPDATE_COMMAND "${CTEST_GIT_COMMAND}")
+set (CTEST_UPDATE_VERSION_ONLY TRUE)
 ctest_update ()
 
 ## -- Configure
